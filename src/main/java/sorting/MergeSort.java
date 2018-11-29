@@ -19,8 +19,11 @@ public class MergeSort {
     int leftEnd = leftStart + (rightEnd - leftStart) / 2;
     int rightStart = leftEnd + 1;
     
+    // left and right will be used later for writing back into nums
     int left = leftStart;
     int right = rightEnd;
+    
+    // Store sorted elements into temp
     int writeIdx = rightEnd;
     while(leftEnd >= leftStart && rightEnd >= rightStart) {
       if(nums[leftEnd] <= nums[rightEnd])
