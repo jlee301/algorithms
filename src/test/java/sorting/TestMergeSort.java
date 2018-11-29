@@ -45,4 +45,11 @@ public class TestMergeSort {
     Assert.assertArrayEquals(new int[] {1,2,3,4,4,4,5}, nums);
   }
 
+  @Test
+  public void testProblemCase6() {
+    int[] nums = {5,5,5,5,5,5,5};
+    MergeSort ms = new MergeSort();
+    ms.sort(nums);
+    Assert.assertArrayEquals(new int[] {5,5,5,5,5,5,5}, nums);
+  }
 }
