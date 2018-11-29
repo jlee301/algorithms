@@ -52,4 +52,12 @@ public class TestQuickSort {
     qs.sort(nums);
     Assert.assertArrayEquals(new int[] {5,5,5,5,5,5,5}, nums);
   }
+
+  @Test
+  public void testProblemCase7() {
+    int[] nums = {3,2,1,5,1,2,3};
+    QuickSort qs = new QuickSort();
+    qs.sort(nums);
+    Assert.assertArrayEquals(new int[] {1,1,2,2,3,3,5}, nums);
+  }
 }
