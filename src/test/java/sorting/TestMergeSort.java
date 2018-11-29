@@ -36,4 +36,13 @@ public class TestMergeSort {
     ms.sort(nums);
     Assert.assertArrayEquals(new int[] {}, nums);
   }
+
+  @Test
+  public void testProblemCase5() {
+    int[] nums = {1,3,4,4,4,5,2};
+    MergeSort ms = new MergeSort();
+    ms.sort(nums);
+    Assert.assertArrayEquals(new int[] {1,2,3,4,4,4,5}, nums);
+  }
+
 }

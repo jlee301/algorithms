@@ -36,4 +36,12 @@ public class TestBubbleSort {
     bs.sort(nums);
     Assert.assertArrayEquals(new int[] {}, nums);
   }
+
+  @Test
+  public void testProblemCase5() {
+    int[] nums = {1,3,4,4,4,5,2};
+    BubbleSort bs = new BubbleSort();
+    bs.sort(nums);
+    Assert.assertArrayEquals(new int[] {1,2,3,4,4,4,5}, nums);
+  }
 }
